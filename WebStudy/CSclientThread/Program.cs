@@ -36,7 +36,9 @@ namespace CSclientThread
                 {
                     break;
                 }
-                client.Send(Encoding.ASCII.GetBytes(input));
+                //发送数据
+                client.Send(Encoding.ASCII.GetBytes(input)); //普通消息发送,通过Send重载可以定义为固定长度消息发送
+
                 //接收数据
                 int rec = client.Receive(buf);
                 Console.WriteLine(Encoding.ASCII.GetString(buf, 0, rec));
