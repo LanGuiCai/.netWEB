@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.rtbxInfo = new System.Windows.Forms.RichTextBox();
             this.rtbxSend = new System.Windows.Forms.RichTextBox();
             this.rtbxReceive = new System.Windows.Forms.RichTextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnSend = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbxStatus = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -46,14 +46,6 @@
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "状态栏";
-            // 
-            // rtbxInfo
-            // 
-            this.rtbxInfo.Location = new System.Drawing.Point(23, 54);
-            this.rtbxInfo.Name = "rtbxInfo";
-            this.rtbxInfo.Size = new System.Drawing.Size(187, 96);
-            this.rtbxInfo.TabIndex = 1;
-            this.rtbxInfo.Text = " ";
             // 
             // rtbxSend
             // 
@@ -79,6 +71,7 @@
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "连接";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnSend
             // 
@@ -88,6 +81,7 @@
             this.btnSend.TabIndex = 5;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // label2
             // 
@@ -107,18 +101,27 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "接收信息";
             // 
+            // lbxStatus
+            // 
+            this.lbxStatus.FormattingEnabled = true;
+            this.lbxStatus.ItemHeight = 12;
+            this.lbxStatus.Location = new System.Drawing.Point(17, 48);
+            this.lbxStatus.Name = "lbxStatus";
+            this.lbxStatus.Size = new System.Drawing.Size(216, 88);
+            this.lbxStatus.TabIndex = 8;
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 368);
+            this.Controls.Add(this.lbxStatus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.rtbxReceive);
             this.Controls.Add(this.rtbxSend);
-            this.Controls.Add(this.rtbxInfo);
             this.Controls.Add(this.label1);
             this.Name = "Mainform";
             this.Text = "异步通信客户端";
@@ -130,13 +133,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox rtbxInfo;
         private System.Windows.Forms.RichTextBox rtbxSend;
         private System.Windows.Forms.RichTextBox rtbxReceive;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox lbxStatus;
     }
 }
 
