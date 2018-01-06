@@ -65,7 +65,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(259, 79);
+            this.btnConnect.Location = new System.Drawing.Point(413, 84);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 4;
@@ -107,7 +107,7 @@
             this.lbxStatus.ItemHeight = 12;
             this.lbxStatus.Location = new System.Drawing.Point(17, 48);
             this.lbxStatus.Name = "lbxStatus";
-            this.lbxStatus.Size = new System.Drawing.Size(216, 88);
+            this.lbxStatus.Size = new System.Drawing.Size(365, 88);
             this.lbxStatus.TabIndex = 8;
             // 
             // Mainform

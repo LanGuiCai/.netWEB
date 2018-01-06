@@ -56,12 +56,12 @@
             this.lbxStatus.ItemHeight = 12;
             this.lbxStatus.Location = new System.Drawing.Point(26, 45);
             this.lbxStatus.Name = "lbxStatus";
-            this.lbxStatus.Size = new System.Drawing.Size(189, 100);
+            this.lbxStatus.Size = new System.Drawing.Size(322, 100);
             this.lbxStatus.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(233, 50);
+            this.btnStart.Location = new System.Drawing.Point(376, 57);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(84, 24);
             this.btnStart.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(232, 101);
+            this.btnStop.Location = new System.Drawing.Point(375, 108);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(84, 26);
             this.btnStop.TabIndex = 3;
